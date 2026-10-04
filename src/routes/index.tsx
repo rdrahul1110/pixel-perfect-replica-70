@@ -30,7 +30,7 @@ function App() {
   const go = (s: Screen) => setScreen(s);
   return (
     <div className="flex min-h-screen justify-center bg-shell sm:py-6">
-      <div className="relative flex h-[100dvh] w-full max-w-[390px] flex-col overflow-hidden bg-navy font-sans text-foreground sm:h-[844px] sm:rounded-[44px] sm:ring-8 sm:ring-black/60">
+      <div className="relative flex h-[100dvh] w-full max-w-[390px] flex-col overflow-hidden bg-navy font-sans text-foreground sm:h-[844px] sm:rounded-[44px] sm:ring-8 sm:ring-navy-deep">
         <main key={screen} className="screen-in relative flex-1 overflow-y-auto px-4 pb-6 pt-6">
           {screen === "home" && <Home go={go} />}
           {screen === "pass" && <BoardingPass go={go} />}
