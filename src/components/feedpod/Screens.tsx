@@ -91,7 +91,7 @@ function QR() {
   for (let i = 0; i < 441; i++) { seed = (seed * 9301 + 49297) % 233280; cells.push(seed / 233280 > 0.5); }
   const finder = (x: number, y: number) => {
     const inBox = (ox: number, oy: number) => x >= ox && x < ox + 7 && y >= oy && y < oy + 7;
-    for (const [ox, oy] of [[0, 0], [14, 0], [0, 14]]) if (inBox(ox, oy)) {
+    for (const [ox, oy] of [[0, 0], [14, 0], [0, 14]] as [number, number][]) if (inBox(ox, oy)) {
       const dx = x - ox, dy = y - oy;
       return dx === 0 || dx === 6 || dy === 0 || dy === 6 || (dx >= 2 && dx <= 4 && dy >= 2 && dy <= 4) ? 1 : 0;
     }
@@ -202,7 +202,7 @@ export function InRide({ go }: { go: Go }) {
       <div className="glass p-4">
         <p className="mb-3 inline-block rounded-full bg-navy-deep px-3 py-1 text-xs">🧑 Riding with 2 verified commuters</p>
         <div className="flex gap-4">
-          {[["AK", "Amit K."], ["RS", "Ritu S."]].map(([i, n]) => (
+          {([["AK", "Amit K."], ["RS", "Ritu S."]] as [string, string][]).map(([i, n]) => (
             <div key={n} className="flex items-center gap-2">
               <Avatar initials={i} size={32} />
               <span className="text-sm">{n}</span><BadgeCheck size={16} className="text-success" />
