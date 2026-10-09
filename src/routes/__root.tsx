@@ -78,14 +78,14 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Ola FeedPod" },
-      { name: "description", content: "Electric micro-transit loops for Indian commuters" },
-      { name: "author", content: "Lovable" },
-      { property: "og:title", content: "Ola FeedPod" },
-      { property: "og:description", content: "Electric micro-transit loops for Indian commuters" },
+      { title: "Ola FeedPod — Autonomous Electric Micro-Transit Loops (MoveOS 4)" },
+      { name: "description", content: "Autonomous electric micro-transit loops connecting residential society gates directly to Namma Metro every 90 seconds. Powered by Ola MoveOS 4." },
+      { name: "author", content: "Ola Electric Micro-Transit" },
+      { property: "og:title", content: "Ola FeedPod — Autonomous Electric Micro-Transit Loops" },
+      { property: "og:description", content: "Autonomous electric micro-transit loops connecting residential society gates directly to Namma Metro every 90 seconds. Powered by Ola MoveOS 4." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
-      { name: "twitter:site", content: "@Lovable" },
+      { name: "twitter:site", content: "@OlaElectric" },
     ],
     links: [
       {
